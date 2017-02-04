@@ -19,31 +19,31 @@ angular.module('app', ['ngRoute'])
     are named what $routeProvider and the partials are expecting  */
 
   .factory('counter', function($scope){
-   // $scope.display = {};
-    $scope.display.count = 0
+   $scope.counter = {};
+    $scope.counter.value = 0
 
 
   })
   .controller('fizzbuzzCtrl', function($scope){
-    if($scope.counter% 3===0){
+    if($scope.counter.value % 3===0){
       $scope.display = "FIZZ"
     }
-    if($scope.counter% 5===0){
+    if($scope.counter.value% 5===0){
       $scope.display = "BUZZ"
     }
-    if($scope.counter % 3===0 && $scope.counter % 5===0 ){
+    if($scope.counter.value % 3===0 && $scope.counter.value % 5===0 ){
       $scope.display = "FIZZBUZZ"
     }
 
   })
   .controller('fozzbazzCtrl', function(){});
- if($scope.counter% 3===0){
+ if($scope.counter.value% 3===0){
       $scope.display = "FIZZ"
     }
-    if($scope.counter% 5===0){
+    if($scope.counter.value% 5===0){
       $scope.display = "BUZZ"
     }
-    if($scope.counter % 3===0 && $scope.counter % 5===0 ){
+    if($scope.counter.value % 3===0 && $scope.counter.value % 5===0 ){
       $scope.display = "FIZZBUZZ"
     }
 
